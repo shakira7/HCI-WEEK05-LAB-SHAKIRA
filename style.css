@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.navbar {
+    background-color: white;
+    color:rgb(67, 70, 87);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "BBH Sans Bogle", sans-serif;
+    flex-direction: row;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%
+}
+
+.nav-list{
+    list-style-type: none;
+    padding: 20px;
+}
+
+.nav-list .list-item{
+    display: inline-block;
+}
+
+.navbar a{
+    color: rgb(67, 70, 87);
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navbar a:hover{
+    color:rgb(119, 119, 147);
+}
+
+.primary-icon {
+    height: 100px;
+    width: auto;
+}
+
+.footbar {
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    color: rgb(67, 70, 87);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 10px;
+    width: 100%
+}
+
+.banner-container {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: block;
+}
+
+.image-banner {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    justify-content: center;
+}
+
+.image-banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 25%; 
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.text-container h1 {
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-size: 100px;
+
+}
+
+.book-container {
+    margin: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-container {
+    flex: 1;
+    background-color: white;
+}
+
+.left-container img{
+    width: 100%;
+    height: 500px;
+    display: block;
+    margin: 0 auto 0 auto;
+    object-fit: contain;
+    padding: 0px 50px 50px 50px;
+}
+
+.right-container {
+    flex: 1;
+    background-color: white;
+}
+
+.right-container img{
+    width: 100%;
+    height: 500px;
+    display: block;
+    margin: 0 auto 0 auto;
+    object-fit: contain;
+    padding: 0px 50px 50px 50px;
+}
+
+.left-container p, .right-container p{
+    padding: 10px 50px 30px 50px 
+}
